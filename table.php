@@ -25,10 +25,9 @@ while($row = mysqli_fetch_array($result))
 echo "<tr>";
 echo "<td>" . $row[UserName] . "</td>";
 echo "<td>" . $row[Email] . "</td>";
-echo "<td>" . $row[Password] . "</td>";
+echo "<td>" . $row[Password].md5($password). "</td>";
 echo "</tr>";
 }
 echo "</table>";
-
 
 ?>
